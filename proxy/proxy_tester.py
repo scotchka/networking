@@ -47,7 +47,7 @@ class HttpRequestTest(BaseTest):
             self.assertDictEqual(response, {
                 'Accept-Encoding': 'identity',
                 'Host': 'localhost:8000',
-                'User-Agent': 'Python-urllib/3.6'
+                'User-Agent': 'Python-urllib/3.7'
             })
 
 
@@ -63,7 +63,7 @@ class KeepAliveTest(BaseTest):
             self.assertDictEqual(response, {
                 'Accept-Encoding': 'identity',
                 'Host': 'localhost:8000',
-                'User-Agent': 'Python-urllib/3.6',
+                'User-Agent': 'Python-urllib/3.7',
                 'Connection': 'Keep-Alive'
             })
 
